@@ -1,0 +1,194 @@
+
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    color: #1e5631;
+    font-size: 32px;
+}
+
+header p {
+    color: #666;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1e5631;
+    margin-bottom: 15px;
+}
+
+/* Add Expense Form */
+.add-expense-section {
+    background-color: #f8faf8;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input:not([type="submit"]),
+form select {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Focus Selector */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1e5631;
+    box-shadow: 0 0 5px rgba(30, 86, 49, 0.3);
+}
+
+/* Add Expense Button */
+button {
+    background-color: #1e5631;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #143d22;
+}
+
+/* Expenses Table */
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Table Headers */
+.expenses-section th {
+    background-color: #1e5631;
+    color: white;
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Table Data */
+.expenses-section td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Alternating Row Colors */
+.expenses-section tr:nth-child(even) {
+    background-color: #eaf2ec;
+}
+
+/* Table Row Hover */
+.expenses-section tbody tr:hover {
+    background-color: #c8e6c9;
+}
+
+/* Instructions Section */
+.instructions {
+    background-color: #f8faf8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #1e5631;
+}
+
+details p {
+    margin-top: 10px;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1e5631;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .expenses-section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
